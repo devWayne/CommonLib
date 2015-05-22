@@ -1,0 +1,110 @@
+doctype html
+html.no-js(lang="")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible",content="IE=edge")
+        title ActiLib
+        meta(name="description",content="")
+        meta(name="viewport",content="width=device-width, initial-scale=1")
+        link(rel="stylesheet",href="css/normalize.css")
+        link(rel="stylesheet",href="css/main.css")
+        link(href="css/animate.min.css",rel="stylesheet",type="text/css")
+        script(src="js/vendor/modernizr-2.8.3.min.js")
+    body
+        div#lead
+            h1 CommonLib通用模块库
+            a.waves-effect.waves-button#docs 查看说明
+
+        div#header.header
+             nav#nav
+                     ul.nav.navbar-nav
+                             li
+                                 a(href="#type1").waves-effect.waves-button 基础设施类
+                             li
+                                 a(href="#type2").waves-effect.waves-button 移动开发类
+                             li
+                                 a(href="#type3").waves-effect.waves-button 性能/模式类
+                             li
+                                 a(href="#type4").waves-effect.waves-button 流程/工具类
+        a.github-ribbon(href="https://github.com/devWayne/CommonLib",target="_blank")
+            img(style="position: fixed; top: 0; right: 0; border: 0;z-index:9999",src="img/github-icon.png",alt="Fork me on GitHub")
+        div.main
+            ul
+                li  
+                    div.unit-headtype1.scrollto#type1 基础设施类
+                li
+                    a(href="https://github.com/devWayne/mBase.css")
+                       div.waves-effect.waves-light.waves-block.unit-blocktype1
+                            p.head mBase.css
+                            p.body 基础样式库
+                    a(href="https://github.com/devWayne/MinRequest")
+                       div.waves-effect.waves-light.waves-block.unit-blocktype1
+                            p.head MinRequest
+                            p.body 轻量化异步请求封装
+                    a(href="https://github.com/devWayne/js-tpl")
+                       div.waves-effect.waves-light.waves-block.unit-blocktype1
+                            p.head js-tpl
+                            p.body js模板引擎
+                    a(href="https://github.com/devWayne/EasyUrl.js")
+                       div.waves-effect.waves-light.waves-block.unit-blocktype1
+                            p.head EasyUrl.js
+                            p.body 对Url操作进行CRUD封装
+                    a(href="https://github.com/devWayne/Emitter")
+                       div.waves-effect.waves-light.waves-block.unit-blocktype1
+                            p.head Emitter
+                            p.body 浏览器端事件模型实现
+                    div.clear
+                li  
+                    div.unit-headtype2.scrollto#type2 移动开发类
+                li
+                    a(href="https://github.com/devWayne/mobileTouch")
+                       div.waves-effect.waves-light.waves-block.unit-blocktype2
+                            p.head mobileTouch
+                            p.body 移动手势识别
+                    div.clear
+                li  
+                    div.unit-headtype3.scrollto#type3 性能/模式类
+                li
+                    a(href="https://github.com/devWayne/vm")
+                       div.waves-effect.waves-light.waves-block.unit-blocktype3
+                            p.head vm
+                            p.body 基于发布者/订阅模式的MVVM实现
+                    a(href="https://github.com/devWayne/KVD")
+                       div.waves-effect.waves-light.waves-block.unit-blocktype3
+                            p.head KVD
+                            p.body 简单的Virtual DOM实现
+                    div.clear
+                li  
+                    div.unit-headtype4.scrollto#type4 流程/工具类
+                li
+                    a(href="https://github.com/devWayne/mBase-Cli")
+                       div.waves-effect.waves-light.waves-block.unit-blocktype4
+                            p.head mBase-Cli
+                            p.body 原子化模块依赖加载工具
+                    a(href="https://github.com/devWayne/MinPanel")
+                       div.waves-effect.waves-light.waves-block.unit-blocktype4
+                            p.head MinPanel
+                            p.body 移动端可视化DEBUG功能
+                    a(href="https://github.com/devWayne/hss")
+                       div.waves-effect.waves-light.waves-block.unit-blocktype4
+                            p.head hss
+                            p.body HTTP静态SERVER
+
+                    a(href="https://github.com/devWayne/pkg-Z")
+                       div.waves-effect.waves-light.waves-block.unit-blocktype4
+                            p.head pkg-Z
+                            p.body 基于broswerify的Commonjs打包工具
+                    div.clear
+        div#end
+            h1 CommonLib通用模块库
+            p 模块库基于CommonJs模块标准，使用Npm引入,Broswerify或Webpack进行打包
+            p 移动UI样式基础组件集合
+              a(href="kylar.cn/mBase-doc") mBase
+              span 配合使用，效果更佳
+            p Copyright © 2015 kylar.cn
+        script window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')
+        script(src="js/plugins.js")
+        script(src="js/waves.js")
+        script(src="js/stickyNavbar.js")
+        script(src="js/main.js")
+        script Waves.displayEffect();
