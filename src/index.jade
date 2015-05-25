@@ -3,7 +3,7 @@ html.no-js(lang="")
     head
         meta(charset="utf-8")
         meta(http-equiv="X-UA-Compatible",content="IE=edge")
-        title ActiLib
+        title CommonLib
         meta(name="description",content="")
         meta(name="viewport",content="width=device-width, initial-scale=1")
         link(rel="stylesheet",href="css/normalize.css")
@@ -53,6 +53,14 @@ html.no-js(lang="")
                        div.waves-effect.waves-light.waves-block.unit-blocktype1
                             p.head Emitter
                             p.body 浏览器端事件模型实现
+                    a(href="https://github.com/devWayne/Dom")
+                       div.waves-effect.waves-light.waves-block.unit-blocktype1
+                            p.head Dom
+                            p.body 浏览器常用DOM WebAPI封装
+                    a(href="https://github.com/devWayne/Css")
+                       div.waves-effect.waves-light.waves-block.unit-blocktype1
+                            p.head Css
+                            p.body 快速添加，更新Css模块
                     div.clear
                 li  
                     div.unit-headtype2.scrollto#type2 移动开发类
@@ -61,6 +69,22 @@ html.no-js(lang="")
                        div.waves-effect.waves-light.waves-block.unit-blocktype2
                             p.head mobileTouch
                             p.body 移动手势识别
+                    a(href="https://github.com/devWayne/Tap")
+                       div.waves-effect.waves-light.waves-block.unit-blocktype2
+                            p.head Tap
+                            p.body 移动端无延迟click事件
+                    a(href="https://github.com/devWayne/Popup")
+                       div.waves-effect.waves-light.waves-block.unit-blocktype2
+                            p.head Popup
+                            p.body 移动端通用弹窗
+                    a(href="https://github.com/devWayne/ImgSwipe")
+                       div.waves-effect.waves-light.waves-block.unit-blocktype2
+                            p.head ImgSwipe
+                            p.body 移动端图片滑动轮播模块
+                    a(href="https://github.com/devWayne/Timeline")
+                       div.waves-effect.waves-light.waves-block.unit-blocktype2
+                            p.head Timeline
+                            p.body 移动端时间线换算
                     div.clear
                 li  
                     div.unit-headtype3.scrollto#type3 性能/模式类
@@ -97,7 +121,8 @@ html.no-js(lang="")
                     div.clear
         div#end
             h1 CommonLib通用模块库
-            p 模块库基于CommonJs模块标准，使用Npm引入,Broswerify或Webpack进行打包
+            p 模块库基于CommonJs模块标准，推荐使用Broswerify或Webpack进行打包
+            p 模块名称前加上前缀<strong>cl-</strong>moduleName,即可使用标准npm引入
             p 移动UI样式基础组件集合
               a(href="kylar.cn/mBase-doc") mBase
               span 配合使用，效果更佳

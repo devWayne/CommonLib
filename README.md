@@ -1,3 +1,9 @@
-# ActiLib
+# CommonLib
 
-A collection of Jquery/Zepto Plugin
+A Mobile First CommonJS Module Lib
+
+## Compile
+
+```shell
+npm install && gulp
+```
